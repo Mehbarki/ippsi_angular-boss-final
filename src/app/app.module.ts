@@ -21,6 +21,7 @@ import { NewGameComponent } from './features/partie/new-game/new-game.component'
 import { ConnexionComponent } from './shared/components/connexion/connexion.component';
 import { UserService } from './shared/services/user.service';
 import { DeconnexionComponent } from './shared/components/deconnexion/deconnexion.component';
+import { ListPlayerComponent } from './features/players/preparer-player/list-player/list-player.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { DeconnexionComponent } from './shared/components/deconnexion/deconnexio
     EndGameComponent,
     NewGameComponent,
     ConnexionComponent,
-    DeconnexionComponent
+    DeconnexionComponent,
+    ListPlayerComponent
   ],
   imports: [
     BrowserModule,

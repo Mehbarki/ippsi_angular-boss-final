@@ -23,6 +23,6 @@ export class PreparerPlayerComponent implements OnInit {
     this.generationPlayer.emit(this.monPlayer);
     this.monPlayer = new Player();
 
-    this.router.navigate(['/']);
+    this.router.navigate(['list-players']);
   }
 }

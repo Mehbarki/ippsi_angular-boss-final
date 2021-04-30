@@ -5,6 +5,7 @@ import { HomeComponent } from "./features/global/home/home.component";
 import { NouvellePartieComponent } from "./features/global/nouvelle-partie/nouvelle-partie.component";
 import { EndGameComponent } from "./features/partie/end-game/end-game.component";
 import { NewGameComponent } from "./features/partie/new-game/new-game.component";
+import { ListPlayerComponent } from "./features/players/preparer-player/list-player/list-player.component";
 
 import { PreparerPlayerComponent } from "./features/players/preparer-player/preparer-player.component";
 
@@ -44,6 +45,9 @@ const routes: Routes = [
   { path: 'player', component: PreparerPlayerComponent},
     
   { path: 'connexion', component: ConnexionComponent},
+  { path: 'list-players', component: ListPlayerComponent},
+
+
     
   
     

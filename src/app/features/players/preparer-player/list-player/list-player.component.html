@@ -1,0 +1,26 @@
+<h1>Liste des Joueurs</h1>
+
+<table class="highlight" *ngIf="players && players.length > 0">
+  <tr>
+    <th>Id</th>
+    <th>Libellé</th>
+    <th></th>
+  </tr>
+  <tr *ngFor="let player of players">
+    <td>
+      {{ player.id }}
+    </td>
+    <td>
+      {{ player.libelle }}
+    </td>
+    <td>
+      Des boutons :D
+    </td>
+  </tr>
+</table>
+
+<div *ngIf="! players || players.length == 0">
+  <a class="btn-floating btn-large red pulse"><i class="material-icons">battery_alert</i></a>
+  <i style="margin-left: 10px;">Aucun players disponible</i>
+</div>
+
