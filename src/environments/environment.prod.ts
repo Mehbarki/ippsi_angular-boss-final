@@ -1,3 +1,8 @@
 export const environment = {
-  production: true
+  production: false,
+  apis: {
+    armes: {
+      url: 'url de prod'
+    }
+  }
 };
