@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ListeArmeComponent } from './liste-arme.component';
+import { NouvellePartieComponent } from './nouvelle-partie.component';
 
-describe('ListeArmeComponent', () => {
-  let component: ListeArmeComponent;
-  let fixture: ComponentFixture<ListeArmeComponent>;
+describe('NouvellePartieComponent', () => {
+  let component: NouvellePartieComponent;
+  let fixture: ComponentFixture<NouvellePartieComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ListeArmeComponent ]
+      declarations: [ NouvellePartieComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ListeArmeComponent);
+    fixture = TestBed.createComponent(NouvellePartieComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

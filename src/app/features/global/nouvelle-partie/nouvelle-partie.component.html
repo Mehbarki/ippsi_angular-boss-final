@@ -1,0 +1,25 @@
+<p>Un droide et un jedi vont se battre : Qui va gagner ?</p>
+<p>Vous disposez de {{ player.credit }} <i class="large material-icons" style="font-size: 15px">euro_symbol</i></p>
+
+
+<form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+    <input name="gagnant" placeholder="Veuillez saisir le gagnant" ngModel required #first="ngModel">
+    <input name="mise" type="number" placeholder="Veuillez saisir la mise" ngModel required>
+    <button class="btn waves-effect waves-light" type="submit" name="action">
+        {{ texteBouton }}
+        <i class="material-icons right">send</i>
+    </button>
+</form>
+<br>
+
+<h1 *ngIf="aGagner">Vous avez gagné !</h1>
+<h1 *ngIf="aGagner == false">Vous avez perdu !</h1>
+
+<div *ngIf="gagnant">Le gagnant est le {{ gagnant }}</div>
+
+<img *ngIf="afficherImageJedi" src="https://www.starwars-universe.com/images/encyclopedie/organisations/divers/Ordre_Jedi_arena.jpg">
+<img *ngIf="afficherImageDroide" src="https://img1.starwars-holonet.com/holonet/dictionnaire/photos/droid_tradefed_superbattle_2.jpg">
+
+<div *ngIf="aJouer">
+    <a href="/">Arrêter la partie</a>
+</div>
