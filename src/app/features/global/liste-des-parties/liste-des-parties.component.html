@@ -1,0 +1,24 @@
+<table class="striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Date</th>
+            <th>Durée</th>
+            <th>Nombre de tours</th>
+            <th>Gain avant</th>
+            <th>Gain après</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let partie of lesParties">
+            <td>{{ partie.id }}</td>
+            <td>{{ partie.date }}</td>
+            <td>{{ partie.duration }}</td>
+            <td>{{ partie.nbTurns }}</td>
+            <td>{{ partie.gainBefore }}</td>
+            <td>{{ partie.gainAfter }}</td>
+          </tr>
+    </tbody>
+</table>
+        

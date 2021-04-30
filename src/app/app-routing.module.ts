@@ -16,11 +16,16 @@ import { DeconnexionComponent } from "./shared/components/deconnexion/deconnexio
 import { PageNotFoundComponent } from "./shared/components/page-not-found/page-not-found.component";
 
 import { StatistiquePartieComponent } from "./features/global/statistique-partie/statistique-partie.component";
+import { ListeDesPartiesComponent } from "./features/global/liste-des-parties/liste-des-parties.component";
 
 const routes: Routes = [
   {
     path: '',
     component: HomeComponent
+  },
+  {
+    path: 'liste-partie',
+    component: ListeDesPartiesComponent
   },
   {
     path: 'nouvelle-arme',

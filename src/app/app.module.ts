@@ -23,6 +23,7 @@ import { DeconnexionComponent } from './shared/components/deconnexion/deconnexio
 import { ListPlayerComponent } from './features/players/preparer-player/list-player/list-player.component';
 
 import { StatistiquePartieComponent } from './features/global/statistique-partie/statistique-partie.component';
+import { ListeDesPartiesComponent } from './features/global/liste-des-parties/liste-des-parties.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { StatistiquePartieComponent } from './features/global/statistique-partie
     ConnexionComponent,
     DeconnexionComponent,
     ListPlayerComponent,
+    ListeDesPartiesComponent,
     StatistiquePartieComponent
   ],
   imports: [
