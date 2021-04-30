@@ -12,7 +12,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { PageNotFoundComponent } from './shared/components/page-not-found/page-not-found.component';
 import { HomeComponent } from './features/global/home/home.component';
 import { ListArmesComponent } from './features/weapons/list-armes/list-armes.component';
+<<<<<<< HEAD
 import { NouvellePartieComponent } from './features/global/nouvelle-partie/nouvelle-partie.component';
+=======
+import { EndGameComponent } from './features/partie/end-game/end-game.component';
+import { NewGameComponent } from './features/partie/new-game/new-game.component';
+>>>>>>> 4314003 (Créer/Fin de partie)
 
 @NgModule({
   declarations: [
@@ -24,7 +29,12 @@ import { NouvellePartieComponent } from './features/global/nouvelle-partie/nouve
     PageNotFoundComponent,
     HomeComponent,
     ListArmesComponent,
+<<<<<<< HEAD
     NouvellePartieComponent,
+=======
+    EndGameComponent,
+    NewGameComponent
+>>>>>>> 4314003 (Créer/Fin de partie)
   ],
   imports: [
     BrowserModule,

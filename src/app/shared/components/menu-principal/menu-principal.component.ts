@@ -20,4 +20,8 @@ export class MenuPrincipalComponent implements OnInit {
     this.logoActive.emit(1);
 
   }
+
+  confirmNew() {
+    confirm("voulez-vous faire une nouvelle partie ?")
+  }
 }
