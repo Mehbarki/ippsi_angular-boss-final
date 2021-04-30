@@ -46,19 +46,11 @@ const routes: Routes = [
   },
   { path: 'player', component: PreparerPlayerComponent},
   { path: 'connexion', component: ConnexionComponent},
-<<<<<<< HEAD
   { path: 'list-players', component: ListPlayerComponent},
-
-
-    
-  
-    
-=======
   {
     path: 'statistiques',
     component: StatistiquePartieComponent
   },    
->>>>>>> 4e4cfc8... Ajout page statistiques
   { path: '**', component: PageNotFoundComponent },
 ]
 
