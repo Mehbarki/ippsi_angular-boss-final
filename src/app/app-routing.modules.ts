@@ -14,8 +14,6 @@ const routes: Routes = [
     { path: 'new_game', component: NewGameComponent },
     { path: 'end_game', component: EndGameComponent },
     { path: '**', component: PageNotFoundComponent }
-
-
 ];
 
 @NgModule({
