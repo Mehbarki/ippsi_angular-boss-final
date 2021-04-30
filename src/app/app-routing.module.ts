@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 import { HomeComponent } from "./features/global/home/home.component";
@@ -15,8 +16,9 @@ import { ConnexionComponent } from "./shared/components/connexion/connexion.comp
 import { DeconnexionComponent } from "./shared/components/deconnexion/deconnexion.component";
 import { PageNotFoundComponent } from "./shared/components/page-not-found/page-not-found.component";
 
-const routes: Routes = [
+import { StatistiquePartieComponent } from "./features/global/statistique-partie/statistique-partie.component";
 
+const routes: Routes = [
   {
     path: '',
     component: HomeComponent
@@ -43,14 +45,20 @@ const routes: Routes = [
     component: EndGameComponent
   },
   { path: 'player', component: PreparerPlayerComponent},
-    
   { path: 'connexion', component: ConnexionComponent},
+<<<<<<< HEAD
   { path: 'list-players', component: ListPlayerComponent},
 
 
     
   
     
+=======
+  {
+    path: 'statistiques',
+    component: StatistiquePartieComponent
+  },    
+>>>>>>> 4e4cfc8... Ajout page statistiques
   { path: '**', component: PageNotFoundComponent },
 ]
 

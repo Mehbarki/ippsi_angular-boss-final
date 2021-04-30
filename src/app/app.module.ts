@@ -17,11 +17,12 @@ import { NouvellePartieComponent } from './features/global/nouvelle-partie/nouve
 import { EndGameComponent } from './features/partie/end-game/end-game.component';
 import { NewGameComponent } from './features/partie/new-game/new-game.component';
 
-
 import { ConnexionComponent } from './shared/components/connexion/connexion.component';
 import { UserService } from './shared/services/user.service';
 import { DeconnexionComponent } from './shared/components/deconnexion/deconnexion.component';
 import { ListPlayerComponent } from './features/players/preparer-player/list-player/list-player.component';
+
+import { StatistiquePartieComponent } from './features/global/statistique-partie/statistique-partie.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { ListPlayerComponent } from './features/players/preparer-player/list-pla
     NewGameComponent,
     ConnexionComponent,
     DeconnexionComponent,
-    ListPlayerComponent
+    ListPlayerComponent,
+    StatistiquePartieComponent
   ],
   imports: [
     BrowserModule,
