@@ -19,6 +19,8 @@ export class AppComponent implements OnInit {
 
   armesSecondaires: Arme[] = [];
 
+  
+
   constructor(private armeService: ArmeService) {
   }
 

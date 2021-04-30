@@ -1,4 +1,6 @@
 import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
+import { User } from 'src/app/core/models/users';
+import { UserService } from '../../services/user.service';
 
 @Component({
   selector: 'app-menu-principal',
@@ -6,10 +8,10 @@ import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./menu-principal.component.css']
 })
 export class MenuPrincipalComponent implements OnInit {
-  @Input() titre: string;
+  @Input() titre: string
   @Output() logoActive: EventEmitter<number> = new EventEmitter<number>(false);
 
-  constructor() { }
+  constructor(public user: UserService) { }
 
   ngOnInit(): void {
     this.logoActive.emit(2);

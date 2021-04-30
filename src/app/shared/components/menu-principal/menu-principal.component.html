@@ -3,13 +3,15 @@
     <a (click)="clickSurLogo()" href="#" class="brand-logo">{{ titre }}</a>
     <ul id="nav-mobile" class="right hide-on-med-and-down">
       <li><a [routerLink]="['']">Accueil</a></li>
-      <li><a href="nouvelle-arme">Création arme (pas bien)</a></li>
-      <li><a [routerLink]="['nouvelle-arme']">Création arme (bien)</a></li>
+      <li><a [routerLink]="['nouvelle-arme']">Création arme</a></li>
+      <li><a [routerLink]="['player']">Ajouter un Joueur</a></li>
+      <li><a [routerLink]="['connexion']">Connexion</a></li>
+      <li><a [routerLink]="['deconnexion']">Deconnexion</a></li>
     </ul>
   </div>
 </nav>
 
 <div style="margin-top: 10px; margin-bottom: 10px;">
-  <a (click)="confirmNew()" style="margin-right: 10px; margin-left: 10px;" class="waves-effect waves-light btn" [routerLink]="['new_game']" >New Game</a>
+  <a (click)="confirmNew()" style="margin-right: 10px; margin-left: 10px;" class="waves-effect waves-light btn" [routerLink]="['nouvelle-partie']" >New Game</a>
 </div>
 

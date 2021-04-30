@@ -12,10 +12,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { PageNotFoundComponent } from './shared/components/page-not-found/page-not-found.component';
 import { HomeComponent } from './features/global/home/home.component';
 import { ListArmesComponent } from './features/weapons/list-armes/list-armes.component';
+
 import { NouvellePartieComponent } from './features/global/nouvelle-partie/nouvelle-partie.component';
 import { EndGameComponent } from './features/partie/end-game/end-game.component';
 import { NewGameComponent } from './features/partie/new-game/new-game.component';
 
+
+import { ConnexionComponent } from './shared/components/connexion/connexion.component';
+import { UserService } from './shared/services/user.service';
+import { DeconnexionComponent } from './shared/components/deconnexion/deconnexion.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +34,9 @@ import { NewGameComponent } from './features/partie/new-game/new-game.component'
     ListArmesComponent,
     NouvellePartieComponent,
     EndGameComponent,
-    NewGameComponent
+    NewGameComponent,
+    ConnexionComponent,
+    DeconnexionComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +44,7 @@ import { NewGameComponent } from './features/partie/new-game/new-game.component'
     HttpClientModule,
     AppRoutingModule
   ],
-  providers: [], // pour les services sans injectable à root
+  providers: [UserService], // pour les services sans injectable à root
   bootstrap: [AppComponent]
 })
 export class AppModule { }

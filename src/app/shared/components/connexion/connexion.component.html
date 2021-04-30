@@ -1,0 +1,41 @@
+<h3>
+    Page de connexion
+</h3>
+  
+<span>
+    Debug :
+</span>
+{{ user | json}}
+  
+  <div class="row debug">
+    <div class="col input-field">
+        <label for="username">Nom d'utilisateur</label> <br>
+      <input
+        placeholder="Nom d'utilisateur"
+        id="username"
+        type="text"
+        class="validate"
+        name="username"
+        [(ngModel)]="user.username"
+      >
+      
+      <input
+        placeholder="Mot de passe"
+        id="password"
+        type="text"
+        class="validate"
+        name="password"
+        [(ngModel)]="user.password"
+      >
+      
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <button class="btn waves-effect waves-light" (click)="clickConnection()" type="button" >
+        Se connecter
+        <i class="material-icons right">send</i>
+      </button>
+    </div>
+  </div>
+  

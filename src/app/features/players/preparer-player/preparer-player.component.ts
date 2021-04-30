@@ -1,4 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Router } from '@angular/router';
 import { Player } from 'src/app/core/models/player';
 
 @Component({
@@ -10,7 +11,7 @@ export class PreparerPlayerComponent implements OnInit {
   monPlayer: Player = new Player();
   @Output() generationPlayer: EventEmitter<Player> = new EventEmitter<Player>(false);
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -21,5 +22,7 @@ export class PreparerPlayerComponent implements OnInit {
 
     this.generationPlayer.emit(this.monPlayer);
     this.monPlayer = new Player();
+
+    this.router.navigate(['/']);
   }
 }
